@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: hsl(60, 96%, 79%);
+    width: 100%;
+}
+header ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+header ul li{
+    margin: 10px;
+}
+
+.logo{
+    width: 100px;
+    height: 50px;
+    padding-top: 10px;
+}
+
+img{
+    width: 150px;
+}
+
+h1{
+    font-size: 24px;
+    color: #003785;
+}
+
+p{
+    font-size: 18px;
+    color: #666666da;
+    text-align: justify;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0 10px 0;
+    width: 100%;
+    align-items: baseline;
+    
+}
+
+.caja{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.caja img{
+    border-radius: 50%;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+.caja p{
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    justify-items: flex-end;
+    text-justify: auto;
+}
+
+footer{
+    text-align: end;
+}
+.anio{
+    text-align: right;
+}
+
+.Geolocation{
+    background-color: #fffec2;
+}
