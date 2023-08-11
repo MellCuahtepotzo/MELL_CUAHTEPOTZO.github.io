@@ -1,2 +1,72 @@
-# MELL_CUAHTEPOTZO.github.io
-project web site
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Mell Cuahtepotzo</title>
+</head>
+<body>
+    <header>
+            <img class="logo" src="./imagenes/Logo.png" alt="logo">
+            <nav>
+             <ul>
+              <a href="./index.html"><li>HOME</li></a>
+              <a href="./queesmi.html"><li>QUÉ ES LA MERCADOTECNIA</li></a>
+              <a href="./articulos.html"><li>ARTICULOS DE INTERÉS</li></a>
+             </ul>
+            </nav>
+    </header>
+
+
+<div class="contenedor">
+    <div class="caja">
+     <img src="./imagenes/Fundamentos 1.jfif" alt="fundamentos">
+     <h1>Fundamentos de mercadotecnia</h1>
+     <p>Los fundamentos de mercadotecnia son esenciales para cualquier empresa u organización que desee prosperar en el mercado. Comprender conceptos, conocer el comportamiento del consumidor y aplicar estrategias éticas son aspectos clave para alcanzar el éxito en este campo. La segmentación de mercados también juega un papel crucial al permitir que las empresas se enfoquen en grupos específicos de clientes y maximicen su potencial de crecimiento.</p>
+    </div>
+
+    <div class="caja">
+     <img src="./imagenes/investigacion de mercados1.jfif" alt="investigacion">
+     <h1>Investigación de mercados</h1>
+     <p>La investigación de mercados es esencial para la toma de decisiones efectivas en el ámbito comercial, ya que proporciona información valiosa para entender el entorno competitivo, identificar oportunidades, diseñar productos y servicios adecuados a las necesidades del mercado y mejorar el posicionamiento y éxito de una organización en su sector.</p>
+    </div>
+
+    <div class="caja">
+     <img src="./imagenes/Distribución1.jpg" alt="distribución">
+     <h1>Estrategias de distribución</h1>
+     <p>Las estrategias de distribución buscan asegurar que los productos estén disponibles para los consumidores finales en el momento y lugar adecuados, a la vez que se minimizan los costos y se maximizan las oportunidades de venta. Estas estrategias deben adaptarse a las características específicas del mercado y los productos, y estar respaldadas por una investigación sólida y una gestión eficiente de la cadena de suministro.</p>
+    </div>
+</div>
+
+<div class="Geolocation">
+    <h1>Geolocation</h1>
+    <p>haz click en el boton para conocer tu ubicación</p>
+    <button onclick="getLocation()">¿donde estoy?</button>
+    <p id="output">Aqui veras el resultado</p>
+
+    <script>
+        
+        function getLocation(){
+            navigator.geolocation.getCurrentPosition(onsuccess); 
+             }
+             
+             function onsuccess(position){
+                let name = prompt('Hola ¿cómo te llamas?');
+                document .getElementById("output") .innerHTML = "Hola " + name + " esta es tu ubicación: " + "latitude: " + position.coords.latitude + " longitud: " + position.coords.longitude;
+              }
+
+    </script>
+</div>
+    
+    <div class="video">
+        <iframe width="460" height="315" src="https://www.youtube.com/embed/ZDFu_S_V_xY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <footer>
+           <p class="anio"><em>®2023 MC Mercadotecia Internacional All Rights Reserved</em></p>
+    </footer>
+
+
+</body>
+</html>
